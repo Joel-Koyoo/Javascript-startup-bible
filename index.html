@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="click-me">CLICK ME</button>
+
+    <script>
+       window.addEventListener("orientationchange", function(e){
+           let screen=window.screen;
+           let angle=screen.orientation.angle;
+           let type = screen.orientation.type;
+
+           console.log(`angle: ${angle}, type : ${type}`)
+       })
+
+    //    first one is for screen orientation
+    // Below is for click activity in html
+       let btn= document.querySelector("#click-me");   
+        btn.addEventListener("click", function(e){
+            console.log("the button was clicked ");
+        })
+
+    </script>
+    
+</body>
+</html>

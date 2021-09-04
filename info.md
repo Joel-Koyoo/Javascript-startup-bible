@@ -1,0 +1,1 @@
+The Code is simple markup for some key javascript scripts useful in web development
